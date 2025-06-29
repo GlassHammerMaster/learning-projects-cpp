@@ -28,21 +28,8 @@ To build and run this project, follow these steps:
    cd cpp-learning-speed
    ```
 
-2. **Install CMake**: Make sure you have CMake installed on your system. You can download it from [CMake's official website](https://cmake.org/download/).
-
-3. **Build the project**:
-   ```
-   mkdir build
-   cd build
-   cmake ..
-   make
-   ```
-
-4. **Run the application**:
-   ```
-   ./cpp-learning-speed
-   ```
-
+2. **Use g++ to build and run** or use other code IDE
+    
 ## Examples
 
 The `src/examples` directory contains example implementations that demonstrate specific C++ concepts. For instance, `example1.cpp` showcases a particular feature of C++. You can explore these examples to understand how different concepts are applied in practice.

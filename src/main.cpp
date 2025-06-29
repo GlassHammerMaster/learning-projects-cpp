@@ -3,7 +3,6 @@
 
 int main() {
     std::cout << "Welcome to the C++ Learning Speed Project!" << std::endl;
-
     int result = add(5, 10);
     std::cout << "Addition Result: " << result << std::endl;
     result = subtract(10, 5);
@@ -12,6 +11,8 @@ int main() {
     std::cout << "Multiplication Result: " << result << std::endl;
     result = divide(10, 5);
     std::cout << "Division Result: " << result << std::endl;    
+    result = isPrime(4);
+    std::cout << "Is 4 a prime number? " << (result ? "Yes" : "No") << std::endl;
 
     return 0;
 }

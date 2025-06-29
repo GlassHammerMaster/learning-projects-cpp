@@ -14,7 +14,6 @@ cpp-learning-speed
 │       └── exercise1.cpp
 ├── include
 │   └── utils.h
-├── CMakeLists.txt
 └── README.md
 ```
 

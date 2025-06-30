@@ -1,11 +1,13 @@
 #include <iostream>
 #include "utils.h"
+#include <vector>
 
 int add(int a, int b);
 int subtract(int a, int b);
 int multiply(int a, int b);
 double divide(int a, int b);
 bool isPrime(int n);
+int findLargest(const int* arr, int size);
 
 // Implement the functions below this line
 
@@ -37,4 +39,18 @@ bool isPrime(int n) {
         if (n % i == 0) return false;
     }
     return true;
+}
+
+int findLargest(const int* arr, int size) {
+    // Start with the first element as the largest
+    int largest = arr[0];
+    // Loop through the array
+    for (int i = 1; i < size; ++i) {
+        // If you find a bigger number, update 'largest'
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+    // Return the largest number found
+    return largest;
 }

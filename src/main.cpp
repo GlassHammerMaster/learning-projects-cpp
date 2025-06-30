@@ -11,8 +11,11 @@ int main() {
     std::cout << "Multiplication Result: " << result << std::endl;
     result = divide(10, 5);
     std::cout << "Division Result: " << result << std::endl;    
-    result = isPrime(4);
-    std::cout << "Is 4 a prime number? " << (result ? "Yes" : "No") << std::endl;
+    bool prime = isPrime(7);
+    std::cout << "Is 7 a prime number? " << (prime ? "Yes" : "No") << std::endl;
+    int arr[] = {1, 2, 3, 4, 5, 2};
+    int largest = findLargest(arr, 6);
+    std::cout << "Largest number in the array: " << largest << std::endl;
 
     return 0;
 }

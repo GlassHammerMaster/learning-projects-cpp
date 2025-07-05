@@ -13,9 +13,12 @@ int main() {
     std::cout << "Division Result: " << result << std::endl;    
     bool prime = isPrime(7);
     std::cout << "Is 7 a prime number? " << (prime ? "Yes" : "No") << std::endl;
-    int arr[] = {1, 2, 3, 4, 5, 2};
-    int largest = findLargest(arr, 6);
+    int arr[] = {1, 2, 3, 4, 5};
+    int largest = findLargest(arr, 5);
     std::cout << "Largest number in the array: " << largest << std::endl;
+    std::vector<int> arrVec(arr, arr + 5);
+    double average = findAverage(arrVec);
+    std::cout << "Average of the array: " << average << std::endl;
 
     return 0;
 }

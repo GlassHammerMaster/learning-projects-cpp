@@ -54,3 +54,15 @@ int findLargest(const int* arr, int size) {
     // Return the largest number found
     return largest;
 }
+
+int findAverage(const std::vector<int>& numbers) {
+    if (numbers.empty()) {
+        std::cerr << "Error: The vector is empty." << std::endl;
+        return 0;  // Meaningful value indicating no elements present
+    }
+    int sum = 0;
+    for (int num : numbers) {
+        sum += num;
+    }
+    return static_cast<double>(sum) / numbers.size();
+}

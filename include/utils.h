@@ -1,6 +1,9 @@
 #ifndef UTILS_H
 #define UTILS_H
 #include <vector>
+#include <iostream>
+#include <random>
+#include <chrono>
 void printArray(const int* arr, int size);
 int factorial(int n);
 bool isPrime(int n);
@@ -13,8 +16,7 @@ double divide(int a, int b);
 int findLargest(const int* arr, int size);
 int findAverage(const std::vector<int>& numbers);
 
-// Example functions
-void exampleFunction();
-void exerciseFunction();
+// Random number generation
+int generateRandomNumber(int min, int max);
 
 #endif // UTILS_H

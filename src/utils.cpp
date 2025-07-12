@@ -1,6 +1,8 @@
 #include <iostream>
 #include "utils.h"
 #include <vector>
+#include <random>
+#include <chrono>
 
 int add(int a, int b);
 int subtract(int a, int b);
@@ -65,4 +67,12 @@ int findAverage(const std::vector<int>& numbers) {
         sum += num;
     }
     return static_cast<double>(sum) / numbers.size();
+}
+
+
+int generateRandomNumber(int min, int max) {
+    std::uniform_int_distribution<int> distribution(min, max);
+    auto seed = std::chrono::system_clock::now().time_since_epoch().count();
+    std::mt19937 generator(seed);
+    return distribution(generator);
 }
